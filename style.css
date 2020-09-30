@@ -1,0 +1,30 @@
+.tile{
+	width: 80px;
+	height: 80px;
+	font-size: 60px;
+	font-family: Helvetica;
+}
+
+.gameBoard{
+	display: none;
+}
+
+.center{
+	margin: 0 auto;
+}
+.container{
+    background-color: slategrey;
+}
+.menu {
+    text-align: center;
+}
+.list{
+    text-align: left;
+}
+.btn-1{
+
+    justify-content: center;
+    color: white;
+    background-color: black;
+}
+

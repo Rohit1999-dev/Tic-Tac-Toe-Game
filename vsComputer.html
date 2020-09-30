@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+</head>
+<style>
+  body {
+  background-color: seashell;
+  font-family: Muli, sans-serif;
+  font-weight: bold;
+  color: #779CB7;
+  margin-top: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  color: #477998;
+}
+ .hidden {
+  display: none;
+ } 
+
+
+
+#choice {
+  font-size: 60px;
+  color: black;
+}
+
+button {
+  text-decoration: none;
+  font-size: 35px;
+  width: 100px;
+  border-radius: 25%;
+  margin: 10px 0px;
+
+}
+button:hover{
+  transform:scale(1.1,1.1);
+  -webkit-transform:scale(1.1,1.1);
+  -moz-transform:scale(1.1,1.1);
+  border-radius: 10px;
+  background-color: aqua;
+
+}
+
+#x, #o {
+  color: black;
+  font-weight: bold;
+}
+
+
+
+#container {
+  text-align: center;
+  margin: 0 auto;
+  width: 420px;
+  height: 420px;
+  position: relative;
+}
+
+#board {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-collapse: collapse;
+  border: 11px solid #90BEDE;
+}
+
+td {
+  border: 10px solid #779CB7;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  font-size: 70px;
+  color: #F3E8EE;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* final screen */
+
+#winner {
+  font-size: 55px;
+  color: #F3E8EE;
+  margin-top: -15px;
+}
+
+#new-game {
+  font-size: 55px;
+  color: #FF5E5B;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  color: #477998;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #F3E8EE;
+}
+h5{
+  margin-top: 30px;
+  text-align: center;
+}
+.container H5{
+  display: none;
+}
+</style>
+<body>
+  <h1>Tic-Tac-Toe</h1>
+  <div id="container">
+    <table id="board" class="hidden">
+      <tr class="row">
+        <td id="c00"></td>
+        <td id="c01"></td>
+        <td id="c02"></td>
+      </tr>
+      <tr class="row">
+        <td id="c10"></td>
+        <td id="c11"></td>
+        <td id="c12"></td>
+      </tr>
+      <tr class="row">
+        <td id="c20"></td>
+        <td id="c21"></td>
+        <td id="c22"></td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="final-screen" class="hidden">
+      <div id="winner"></div>
+      <br>
+      <a href="/gameMode.html" id="new-game">Play Again</a>
+    </div>
+    <div id="choice">
+      <button type="button" id="x">X</button>
+      <button type="button" id="o">O</button>
+
+    </div>
+
+  </div>
+  <center><button class="btn-2"><a href="/gameMode.html">Back</a></button></div></center>
+  <h5>Choose one mode to play either X or O</h5>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="computer.js"></script>
+</body>
+
+
+</html>

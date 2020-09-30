@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tic Tac Toe</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="node_modules/skeleton-css/css/skeleton.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="menu">
+				<h1>Tic - Tac - Toe - Game</h1>
+				<h3>Instruction for play match and join new match</h3>
+				<ol class="list"> 
+					<li><b>Player A) Create a new game by entering the username.</b></li>
+					<li><b>Player B) Enter another username and the user_id id that is displayed on first window.</b></li>
+					<li><b>Click on join game.</b></li>
+				</ol>
+				<h4>Start New Match</h4>
+				<input type="text" name="name" id="nameNew" placeholder="Enter your name" required>
+				<button id="new">New Game</button>
+				<br><br>
+				<h4>Join Match</h4>
+				<input type="text" name="name" id="nameJoin" placeholder="Enter your name" required>
+				<input type="text" name="room" id="room" placeholder="Enter User Game ID" required>
+				<button id="join">Join Game</button>
+			</div>
+				<button class="btn-1"><a href="/gameMode.html">Back</a></button>
+
+			
+			<div class="gameBoard" style="display: none;">
+				<h2 id="userHello"></h2>
+				<h3 id="turn"></h3>
+				<table class="center">
+					<tr>
+						<td><button class="tile" id="button_00"></button></td>
+						<td><button class="tile" id="button_01"></button></td>
+						<td><button class="tile" id="button_02"></button></td>
+					</tr>
+					<tr>
+						<td><button class="tile" id="button_10"></button></td>
+						<td><button class="tile" id="button_11"></button></td>
+						<td><button class="tile" id="button_12"></button></td>
+					</tr>
+					<tr>
+						<td><button class="tile" id="button_20"></button></td>
+						<td><button class="tile" id="button_21"></button></td>
+						<td><button class="tile" id="button_22"></button></td>
+					</tr>	
+
+				</table>
+			</div>
+		</div>
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
